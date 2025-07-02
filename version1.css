@@ -1,0 +1,174 @@
+    :root {
+      --sidebar-expanded-width: 250px;
+      --sidebar-collapsed-width: 70px;
+    }
+
+    body {
+      margin: 0;
+      padding-left: var(--sidebar-expanded-width);
+      transition: padding-left 0.3s;
+      background-color:#191919 !important;
+      color: #ffffff !important;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: var(--sidebar-expanded-width);
+      background: linear-gradient(to right, #2E0606, #941414);
+      color: white;
+      transition: width 0.3s ease-in-out;
+      z-index: 1040;
+      overflow: hidden;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .sidebar.collapsed {
+      width: var(--sidebar-collapsed-width);
+    }
+
+    body.sidebar-collapsed {
+      padding-left: var(--sidebar-collapsed-width);
+    }
+
+    .sidebar.collapsed .side-menu {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .sidebar.collapsed .side-menu1 {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }   
+    .sidebar.collapsed .button-bg {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .sidebar:not(.collapsed) .side-cont img {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .sidebar.collapsed .button-bg {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    }
+    .sidebar.collapsed .button-no-bg {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .sidebar:not(.collapsed) .button-bg {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .sidebar:not(.collapsed) .button-no-bg {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .navbar-toggler {
+      background-color: white;
+      border: none;
+      padding: 5px 10px;
+    }
+    .card-body{
+      background-color: #191919;
+    }
+
+    .card-title{
+      color:#ffffff;
+    }
+    .content{
+      padding: 2rem;
+    }
+
+    .profile-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .side-menu{
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #2E0606, #941414);
+      border-radius: 10px;
+      width: 75%;
+      height: 50px;
+
+    }
+
+      .side-menu1{
+      align-items: center;
+      background-color: #262626;
+      border: 0.5px solid #ffffff;
+      border-radius: 10px;
+      width: 75%;
+      height: 50px;
+    }
+    .side-cont{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .button-bg {
+      background: linear-gradient(to right, #7D0000, #FF3030);
+    }
+    .card-title, .card-subtitle, .card-text{
+      color: #ffffff !important;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: 100;
+    }
+    .card-text{
+      font-size: 0.8rem;
+    }
+    .card-title{
+      font-weight:800 ;
+      font-size: 5rem;
+    }
+    .table-container {
+      display: flex;
+      justify-content: center; /* centers child (table) horizontally */
+      align-items: center;
+      flex-direction: column;
+      width: 100%; /* or keep 90% if needed */
+      margin: 0 auto;
+    }
+
+    .custom-table {
+      width: 90%;
+      font-family: 'Noto Sans', sans-serif !important;
+      border-collapse: separate !important;
+      border-spacing: 0 !important;
+      background-color: #111111 !important;
+      border-radius: 12px;
+      overflow: hidden;
+      color: #ffffff;
+      font-size: small;
+    }
+    .custom-table thead {
+      background: linear-gradient(to right, #bb0000, #ca0101) !important;
+      color: white !important;
+      font-weight: 400 !important;
+    }
+
+    .custom-table th,
+    .custom-table td {
+      padding: 12px 16px !important;
+      vertical-align: middle;
+      border: none !important;
+    }
+
+    .custom-table td {
+      font-weight: 200 !important;
+    }

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <img src="AADESIGNSLOGO.png" alt="Logo" width="100">
+  </div>
+
+  <ul class="nav-center">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="index.html">Scores</a></li>
+  <li><a href="midterm.html">Midterm</a></li>
+  <li><a href="finals.html">Finals</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="contact-me">Contact Me</button>
+  </div>
+</nav>
+<!-- Main Content -->
+
+<div class="content px-1 py-0 mb-1 mx-auto" style="margin-top: -20%;">
+  <div class="card mx-auto mt-5 border-0">
+    <div class="card-body">
+
+      <!-- Main Horizontal Flex: Image + Info -->
+      <div class="d-flex align-items-start">
+        <!-- Image -->
+        <div class="me-3 p-0">
+          <img src="imag2.jpg" alt="My Pic" width="100" height="100" class="rounded-circle border border-secondary">
+        </div>
+
+        <!-- Text & Info -->
+        <div class="flex-grow-1">
+          <h5 class="card-title mb-0 fs-3 p-1">Abbedja Lear P. Tuvalles</h5>
+          <p class="card-subtitle fs-5 mb-4 p-1 px-1">BSCS 3-1N</p>
+
+          <!-- Info Grid -->
+          <div class="row p-2">
+            <!-- Left Column -->
+            <div class="col-md-6 px-4 border-end" style="border-color: rgba(0,0,0,0.2);">
+              <div class="d-flex flex-nowrap align-items-start" style="gap: 1rem;">
+                <div style="min-width: 220px;">
+                  <p class="card-text mb-2 fw-bold">Department:</p>
+                  <p class="card-text mb-2 fw-bold">Program:</p>
+                  <p class="card-text mb-2 fw-bold">Year Level:</p>
+                  <p class="card-text mb-2 fw-bold">Academic Year:</p>
+                </div>
+                <div>
+                  <p class="card-text mb-2">CCIS</p>
+                  <p class="card-text mb-2">Computer Science</p>
+                  <p class="card-text mb-2">3rd Year</p>
+                  <p class="card-text mb-2">2024–2025</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6 px-4">
+              <div class="d-flex flex-nowrap align-items-start" style="gap: 1rem;">
+                <div style="min-width: 220px;">
+                  <p class="card-text mb-2 fw-bold">Subject Code:</p>
+                  <p class="card-text mb-2 fw-bold">Description:</p>
+                  <p class="card-text mb-2 fw-bold">Semester:</p>
+                  <p class="card-text mb-2 fw-bold">Professor:</p>
+                </div>
+                <div>
+                  <p class="card-text mb-2">COMP 016</p>
+                  <p class="card-text mb-2">Web Development</p>
+                  <p class="card-text mb-2">2nd</p>
+                  <p class="card-text mb-2">Severino M. Bedis Jr.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scores</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <style>
+    body {
+      background-color: #191919;
+      color: #ffffff;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    .container-custom {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 1rem;
+    }
+
+    .table-section {
+      width: 90%;
+      margin: 0 auto 2rem auto;
+    }
+
+    .table-title {
+      border-radius: 10px;
+      width: 40%;
+      padding: 10px;
+      background: linear-gradient(to right, #8D0000, rgba(141, 0, 0, 0));
+    }
+
+    .table-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .table-header h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .btn-arrow {
+      background: linear-gradient(to right, #bb0000, #ca0101);
+      border: none;
+      color: white;
+      font-size: 1.25rem;
+      padding: 0.3rem 1rem;
+      border-radius: 8px;
+      margin-left: 0.25rem;
+      transition: background 0.2s ease;
+    }
+
+    .btn-arrow:hover {
+      background: linear-gradient(to right, #ff0000, #ff3c3c);
+    }
+
+    .custom-table {
+      width: 100%;
+      background-color: #191919;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 0.5px solid #ffffff33;
+      color: #fff;
+      font-size: small;
+    }
+
+    .custom-table thead {
+      background-color: #191919;
+      color: white;
+      font-weight: 400;
+    }
+
+    .custom-table th {
+      border: 1px solid #ffffff33;
+      padding: 12px 16px;
+      vertical-align: middle;
+    }
+
+    .custom-table td {
+      padding: 12px 16px;
+      vertical-align: middle;
+      border: none;
+      font-weight: 200;
+    }
+
+    .pagination-controls {
+      margin-top: 10px;
+    }
+
+    .pagination-controls span {
+      min-width: 80px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-custom" style="margin-top: -18%;">
+  <!-- Header + Navigation -->
+  <div class="table-section">
+    <div class="table-header">
+      <div class="table-title">
+        <h2 id="table-title">Midterms</h2>
+      </div>
+      <div>
+        <button class="btn-arrow" onclick="showPage('midterms')">&lt;</button>
+        <button class="btn-arrow" onclick="showPage('finals')">&gt;</button>
+      </div>
+    </div>
+
+    <!-- Midterms Table -->
+    <div id="midterms">
+      <table class="custom-table" id="midtermsTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Due at</th>
+            <th>Submitted at</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody id="midtermsBody"></tbody>
+      </table>
+
+      <div class="pagination-controls d-flex justify-content-center gap-2 mt-2">
+        <button class="btn-arrow" onclick="changeMidtermPage(-1)">&lt;</button>
+        <span id="midtermPageIndicator" style="color:white;">Page 1</span>
+        <button class="btn-arrow" onclick="changeMidtermPage(1)">&gt;</button>
+      </div>
+    </div>
+
+    <!-- Finals Table -->
+    <div id="finals" style="display: none;">
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Due at</th>
+            <th>Submitted at</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Laravel Install</strong></td><td>06-18-2025 11:59 PM</td><td>06-17-2025 03:05 PM</td><td>20 / 20</td></tr>
+          <tr><td><strong>Laravel Auth</strong></td><td>06-20-2025 11:59 PM</td><td>06-20-2025 02:37 PM</td><td>20 / 20</td></tr>
+          <tr><td><strong>Basic CRUD</strong></td><td>06-23-2025 11:59 PM</td><td>06-23-2025 12:29 PM</td><td>20 / 20</td></tr>
+          <tr><td><strong>Final Project</strong></td><td>06-29-2025 11:59 PM</td><td>06-29-2025 11:37 PM</td><td>- / 100</td></tr>
+          <tr><td><strong>Final E-Portfolio</strong></td><td>07-02-2025 11:59 PM</td><td>—</td><td>— / 50</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Midterm Pagination Logic
+  const midtermData = [
+    ["About Me", "03-02-2025 11:59 PM", "03-02-2025 01:44 AM", "20 / 20"],
+    ["Assignment #1 - Web Dev", "03-07-2025 11:59 PM", "03-07-2025 06:59 PM", "20 / 20"],
+    ["Activity #2 – HTML Tags", "03-14-2025 06:00 PM", "03-14-2025 05:47 PM", "30 / 30"],
+    ["Activity #1 – Text & Images", "03-14-2025 11:59 PM", "03-14-2025 03:32 AM", "30 / 30"],
+    ["Bootstrap Portfolio", "03-16-2025 12:00 PM", "03-16-2025 11:38 AM", "30 / 30"],
+    ["Quiz #1", "03-17-2025 01:30 PM", "03-17-2025 12:33 PM", "15 / 20"],
+    ["Event Webpage", "03-31-2025 06:00 PM", "03-31-2025 08:51 AM", "50 / 50"],
+    ["Responsive Restaurant", "03-31-2025 09:00 PM", "03-31-2025 04:32 PM", "50 / 50"],
+    ["Midterm E-Portfolio", "04-24-2025 06:00 PM", "04-24-2025 12:31 PM", "45 / 50"],
+    ["Midterm Project", "04-28-2025 11:59 PM", "—", "—"]
+  ];
+
+  let midtermCurrentPage = 1;
+  const midtermRowsPerPage = 5;
+
+  function renderMidtermPage(page) {
+    const tbody = document.getElementById("midtermsBody");
+    const start = (page - 1) * midtermRowsPerPage;
+    const end = start + midtermRowsPerPage;
+    const rows = midtermData.slice(start, end);
+
+    tbody.innerHTML = "";
+    rows.forEach(row => {
+      const tr = document.createElement("tr");
+      row.forEach(cell => {
+        const td = document.createElement("td");
+        td.innerHTML = `<strong>${cell}</strong>`;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+
+    document.getElementById("midtermPageIndicator").textContent = `Page ${midtermCurrentPage}`;
+  }
+
+  function changeMidtermPage(direction) {
+    const maxPage = Math.ceil(midtermData.length / midtermRowsPerPage);
+    midtermCurrentPage += direction;
+
+    if (midtermCurrentPage < 1) midtermCurrentPage = 1;
+    if (midtermCurrentPage > maxPage) midtermCurrentPage = maxPage;
+
+    renderMidtermPage(midtermCurrentPage);
+  }
+
+  function showPage(pageId) {
+    const midterms = document.getElementById('midterms');
+    const finals = document.getElementById('finals');
+    const title = document.getElementById('table-title');
+
+    if (pageId === 'midterms') {
+      midterms.style.display = 'block';
+      finals.style.display = 'none';
+      title.textContent = 'Midterms';
+    } else {
+      midterms.style.display = 'none';
+      finals.style.display = 'block';
+      title.textContent = 'Finals';
+    }
+  }
+
+  // Init
+  renderMidtermPage(midtermCurrentPage);
+</script>
+
+</body>
+</html>
